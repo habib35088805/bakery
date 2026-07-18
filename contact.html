@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order & Contact | Dadin Kowa Bakery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">Dadin Kowa</a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Order / Contact</a>
+          <a href="register.html">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Order & contact</p>
+          <h1>Let us help with your next celebration.</h1>
+          <p>Call us, send a message, or stop by for custom orders and fresh bakes.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <h2>Call us</h2>
+            <p><strong>Phone:</strong> 0800 123 4567</p>
+            <p><strong>Address:</strong> 14 Aliyu Road, Dadin Kowa</p>
+            <img src="images/map-placeholder.svg" alt="Placeholder map for the bakery location" />
+          </div>
+          <div class="contact-card">
+            <h2>Place an order</h2>
+            <form id="order-form">
+              <label>
+                Name
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                What would you like to order?
+                <textarea name="message" rows="4" required></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Send request</button>
+              <p id="form-message" class="form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Dadin Kowa Bakery</h3>
+          <p>Crafted daily with warmth and tradition.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>0800 123 4567</p>
+          <p>hello@dadinkowa.com</p>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> Dadin Kowa Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

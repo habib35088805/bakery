@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Dadin Kowa Bakery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">Dadin Kowa</a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Order / Contact</a>
+          <a href="register.html" class="active">Register</a>
+        </nav>
+        <div id="auth-pill" class="auth-pill" aria-live="polite"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Create account</p>
+          <h1>Join the Dadin Kowa family.</h1>
+          <p>Create your account to receive warm updates, special offers, and a personalized welcome.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container register-wrap">
+          <form id="register-form" class="contact-card">
+            <h2>Sign up</h2>
+            <label>
+              First name
+              <input type="text" name="firstName" required />
+            </label>
+            <label>
+              Last name
+              <input type="text" name="lastName" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone" required />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" inputmode="numeric" pattern="[0-9]{6}" minlength="6" maxlength="6" required />
+            </label>
+            <p class="hint">Please enter a 6-digit password.</p>
+            <button class="btn btn-primary" type="submit">Create account</button>
+            <p id="register-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Dadin Kowa Bakery</h3>
+          <p>Crafted daily with warmth and tradition.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>0800 123 4567</p>
+          <p>hello@dadinkowa.com</p>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> Dadin Kowa Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
